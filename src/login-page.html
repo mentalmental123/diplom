@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <section class="header-section">
+        <!-- <div class="container"> -->
+        <nav class="navigation">
+          <div class="logo">
+            <a href="./index.html">Track<span class="black-logo">Imp</span></a>
+          </div>
+          <ul class="nav-flex-menu">
+            <li class="nav-flex-menu-item">
+              <a class="nav-page" href="./login-page.html">Info</a>
+            </li>
+
+            <li data-login="out" id="login-option" class="nav-flex-menu-item">
+              <a class="nav-page login-set" href="./login-page.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="role-label"></p>
+        <!-- </div> -->
+      </section>
+    </header>
+
+    <div class="mother-board">
+      <form class="login">
+        <input id="login" type="text" placeholder="Username" />
+        <input id="password" type="password" placeholder="Password" />
+        <button class="login-button">Login</button>
+      </form>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
