@@ -1,6 +1,10 @@
 * {
   padding: 0;
   margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #fff9;
+  box-sizing: border-box;
 }
 
 input {
@@ -10,12 +14,6 @@ input {
 body {
   background-color: var(--primary-green);
   font-family: 'Asap', sans-serif;
-}
-
-* {
-  list-style: none;
-  text-decoration: none;
-  color: #fff9;
 }
 
 :root {
@@ -215,6 +213,20 @@ input[type='file']::file-selector-button:hover {
   background: var(--secondary-green);
 }
 
+/* template */
+
+.template {
+  text-decoration: underline;
+  scale: 1;
+  transition: all 250ms ease;
+  max-width: 200px;
+}
+
+.template:hover {
+  color: var(--secondary-green);
+  scale: 1.1;
+}
+
 /* mother-board */
 
 .mother-board {
@@ -225,4 +237,74 @@ input[type='file']::file-selector-button:hover {
 .role-header {
   text-align: center;
   margin-bottom: 50px;
+}
+
+/* pollution form */
+
+.pollution-form {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  margin: 0 auto;
+  gap: 20px;
+  box-sizing: content-box;
+}
+
+.pollution-form-title {
+  margin-bottom: 20px;
+}
+
+.pollution-form-field {
+  width: 350px;
+  max-width: 100%;
+  color: #fff;
+  padding: 10px 12px;
+  background: var(--header-acent-gren);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: all 250ms ease;
+}
+.pollution-form-field:hover,
+.pollution-form-field:focus {
+  border: 2px solid black;
+}
+.pollution-form-fields-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pollution-form-button {
+  padding: 15px 17px;
+  background: var(--header-acent-gren);
+  border-radius: 10px;
+  border: none;
+  transition: all 250ms ease;
+  cursor: pointer;
+  color: #fff;
+}
+
+.pollution-form-button:hover,
+.pollution-form-button:focus {
+  background-color: var(--secondary-green);
+}
+
+/* exel input settings */
+
+/* .exel {
+  display: flex;
+  flex-direction: column;
+} */
+
+.exel-flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.exel-input {
+  /* margin-left: 20px; */
 }
